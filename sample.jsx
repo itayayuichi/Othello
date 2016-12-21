@@ -1,0 +1,1 @@
+fileRef = new File ("/Users/openspc/myText.txt");flag = fileRef.open ("w","","");if (flag){	txt = fileRef.writeln("日本語も書き込めます");}fileRef.close();

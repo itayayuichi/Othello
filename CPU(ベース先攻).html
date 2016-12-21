@@ -1,0 +1,260 @@
+<HTML>
+	<head>
+		<title>最新作</title>
+	</head>
+<CENTER>
+<style type="text/css">
+<!--
+line-height:0;width:300px;
+input[type=text]{
+ width:200px;
+ height:50px;
+ font-size:1.6em;
+ }
+-->
+</style>
+	<body bgcolor="#87cefa">
+		<h1>オセロ弱(先攻)</h1>
+<br>
+<INPUT type="text" name="ターン" value="プレイヤー(黒)のターンです。" id="textbox" size="50" readonly ><br/><br>
+<img src="bg0.gif" id="button_0"   onclick="bwHaichi(0);" /><img src="bg1.gif" id="button_1"   onclick="bwHaichi(1);" /><img src="bg2.gif" id="button_2"   onclick="bwHaichi(2);" /><img src="bg3.gif" id="button_3"   onclick="bwHaichi(3);"  /><img src="bg4.gif" id="button_4"   onclick="bwHaichi(4);" /><img src="bg5.gif" id="button_5"   onclick="bwHaichi(5);" /><img src="bg6.gif" id="button_6"   onclick="bwHaichi(6);" /><img src="bg7.gif" id="button_7"   onclick="bwHaichi(7);" /><img src="bg8.gif" id="button_8"   onclick="bwHaichi(8);" /><img src="bg0.gif" id="button_9"   onclick="bwHaichi(9);" /><br/>
+<img src="bg1.gif" id="button_10"   onclick="bwHaichi(10);" /><img src="img0.gif" id="button_11"   onclick="bwHaichi(11);" /><img src="img0.gif" id="button_12"   onclick="bwHaichi(12);" /><img src="img0.gif" id="button_13"   onclick="bwHaichi(13);"  /><img src="img0.gif" id="button_14"   onclick="bwHaichi(14);" /><img src="img0.gif" id="button_15"   onclick="bwHaichi(15);" /><img src="img0.gif" id="button_16"   onclick="bwHaichi(16);" /><img src="img0.gif" id="button_17"   onclick="bwHaichi(17);" /><img src="img0.gif" id="button_18"   onclick="bwHaichi(18);" /><img src="bg0.gif" id="button_19"   onclick="bwHaichi(19);" /><br>
+<img src="bg2.gif" id="button_20"   onclick="bwHaichi(20);" /><img src="img0.gif" id="button_21"   onclick="bwHaichi(21);" /><img src="img0.gif" id="button_22"   onclick="bwHaichi(22);" /><img src="img0.gif" id="button_23"   onclick="bwHaichi(23);"  /><img src="img0.gif" id="button_24"   onclick="bwHaichi(24);" /><img src="img0.gif" id="button_25"   onclick="bwHaichi(25);" /><img src="img0.gif" id="button_26"   onclick="bwHaichi(26);" /><img src="img0.gif" id="button_27"   onclick="bwHaichi(27);" /><img src="img0.gif" id="button_28"   onclick="bwHaichi(28);" /><img src="bg0.gif" id="button_29"   onclick="bwHaichi(29);" /><br>
+<img src="bg3.gif" id="button_30"   onclick="bwHaichi(30);"  /><img src="img0.gif" id="button_31"   onclick="bwHaichi(31);" /><img src="img0.gif" id="button_32"   onclick="bwHaichi(32);" /><img src="img0.gif" id="button_33"   onclick="bwHaichi(33);"  /><img src="img0.gif" id="button_34"   onclick="bwHaichi(34);" /><img src="img0.gif" id="button_35"   onclick="bwHaichi(35);" /><img src="img0.gif" id="button_36"   onclick="bwHaichi(36);" /><img src="img0.gif" id="button_37"   onclick="bwHaichi(37);" /><img src="img0.gif" id="button_38"   onclick="bwHaichi(38);" /><img src="bg0.gif" id="button_39"   onclick="bwHaichi(39);" /><br/>
+<img src="bg4.gif" id="button_40"   onclick="bwHaichi(40);"  /><img src="img0.gif" id="button_41"   onclick="bwHaichi(41);" /><img src="img0.gif" id="button_42"   onclick="bwHaichi(42);" /><img src="img0.gif" id="button_43"   onclick="bwHaichi(43);"  /><img src="img1.gif" id="button_44"   onclick="bwHaichi(44);" /><img src="img2.gif" id="button_45"   onclick="bwHaichi(45);" /><img src="img0.gif" id="button_46"   onclick="bwHaichi(46);" /><img src="img0.gif" id="button_47"   onclick="bwHaichi(47);" /><img src="img0.gif" id="button_48"   onclick="bwHaichi(48);" /><img src="bg0.gif" id="button_49"   onclick="bwHaichi(49);" /><br/>
+<img src="bg5.gif" id="button_50"   onclick="bwHaichi(50);"  /><img src="img0.gif" id="button_51"   onclick="bwHaichi(51);" /><img src="img0.gif" id="button_52"   onclick="bwHaichi(52);" /><img src="img0.gif" id="button_53"   onclick="bwHaichi(53);"  /><img src="img2.gif" id="button_54"   onclick="bwHaichi(54);" /><img src="img1.gif" id="button_55"   onclick="bwHaichi(55);" /><img src="img0.gif" id="button_56"   onclick="bwHaichi(56);" /><img src="img0.gif" id="button_57"   onclick="bwHaichi(57);" /><img src="img0.gif" id="button_58"   onclick="bwHaichi(58);" /><img src="bg0.gif" id="button_59"   onclick="bwHaichi(59);" /><br/>
+<img src="bg6.gif" id="button_60"   onclick="bwHaichi(60);"  /><img src="img0.gif" id="button_61"   onclick="bwHaichi(61);" /><img src="img0.gif" id="button_62"   onclick="bwHaichi(62);" /><img src="img0.gif" id="button_63"   onclick="bwHaichi(63);"  /><img src="img0.gif" id="button_64"   onclick="bwHaichi(64);" /><img src="img0.gif" id="button_65"   onclick="bwHaichi(65);" /><img src="img0.gif" id="button_66"   onclick="bwHaichi(66);" /><img src="img0.gif" id="button_67"   onclick="bwHaichi(67);" /><img src="img0.gif" id="button_68"   onclick="bwHaichi(68);" /><img src="bg0.gif" id="button_69"   onclick="bwHaichi(69);" /><br/>
+<img src="bg7.gif" id="button_70"   onclick="bwHaichi(70);"  /><img src="img0.gif" id="button_71"   onclick="bwHaichi(71);" /><img src="img0.gif" id="button_72"   onclick="bwHaichi(72);" /><img src="img0.gif" id="button_73"   onclick="bwHaichi(73);"  /><img src="img0.gif" id="button_74"   onclick="bwHaichi(74);" /><img src="img0.gif" id="button_75"   onclick="bwHaichi(75);" /><img src="img0.gif" id="button_76"   onclick="bwHaichi(76);" /><img src="img0.gif" id="button_77"   onclick="bwHaichi(77);" /><img src="img0.gif" id="button_78"   onclick="bwHaichi(78);" /><img src="bg0.gif" id="button_79"   onclick="bwHaichi(79);" /><br/>
+<img src="bg8.gif" id="button_80"   onclick="bwHaichi(80);"  /><img src="img0.gif" id="button_81"   onclick="bwHaichi(81);" /><img src="img0.gif" id="button_82"   onclick="bwHaichi(82);" /><img src="img0.gif" id="button_83"   onclick="bwHaichi(83);"  /><img src="img0.gif" id="button_84"   onclick="bwHaichi(84);" /><img src="img0.gif" id="button_85"   onclick="bwHaichi(85);" /><img src="img0.gif" id="button_86"   onclick="bwHaichi(86);" /><img src="img0.gif" id="button_87"   onclick="bwHaichi(87);" /><img src="img0.gif" id="button_88"   onclick="bwHaichi(88);" /><img src="bg0.gif" id="button_89"   onclick="bwHaichi(89);" /><br/>
+<img src="bg0.gif" id="button_90"   onclick="bwHaichi(90);"  /><img src="bg0.gif" id="button_91"   onclick="bwHaichi(91);" /><img src="bg0.gif" id="button_92"   onclick="bwHaichi(92);" /><img src="bg0.gif" id="button_93"   onclick="bwHaichi(93);"  /><img src="bg0.gif" id="button_94"   onclick="bwHaichi(94);" /><img src="bg0.gif" id="button_95"   onclick="bwHaichi(95);" /><img src="bg0.gif" id="button_96"   onclick="bwHaichi(96);" /><img src="bg0.gif" id="button_97"   onclick="bwHaichi(97);" /><img src="bg0.gif" id="button_98"   onclick="bwHaichi(98);" /><img src="bg0.gif" id="button_99"   onclick="bwHaichi(99);" /><br/>
+
+
+		<script>
+/*****************************************************
+******************************************************
+			配列・変数宣言
+******************************************************
+*****************************************************/		
+			var cnt=1;
+			var recnt=2;
+			var img = new Array();
+			img[0] = new Image();
+			img[0].src = "img0.gif";
+			img[1] = new Image();
+			img[1].src = "img2.gif";	//白の画像
+			img[2] = new Image();
+			img[2].src=  "img1.gif";	//黒の画像
+			var siro=2;
+			var kuro=2;
+			var ishi=4;
+			var bb=[];
+			var wb=[];
+			var kzs=[1,9,10,11,-1,-9,-10,-11];
+			var st="button_";
+			var d=document;
+			var wturn="CPU(白)のターンです。(考え中)";
+			var bturn="プレイヤー(黒)のターンです。";
+			var wwin="白の勝ち";
+			var bwin="黒の勝ち";
+
+/*****************************************************
+******************************************************
+			石を置く
+******************************************************
+*****************************************************/
+			function bwHaichi(n){
+				scan();
+				if(cnt==1){
+					if(d.getElementById(st+n).src==img[0].src && wb[n]==1){
+					var e = document.getElementById ('some');
+						e.value=e.value+"黒"+n+"\n";	// 正しい
+						d.getElementById(st+n).src=img[1].src;
+						change(n);
+						cnt=2;
+						recnt=1;
+						kuro++;
+						d.getElementById('textbox').value=wturn;
+						ishi++;
+						d.getElementById('sirokazu').value=siro;
+						d.getElementById('kurokazu').value=kuro;
+						scan();
+						setTimeout('pass()',500);
+						syouhai();
+						if(cnt==2){
+						setTimeout("vcpu()", 1000);
+					}
+					}
+				}
+			}
+			function vcpu(){
+				if(cnt==2){
+					var juu=Math.floor( Math.random() * (9-1))+1;
+					var iti=Math.floor( Math.random() * (9-1))+1;
+					var cpu=juu*10+iti;
+					var kaisuu=0;
+						while(bb[cpu]==0 && cnt==2){
+						var juu=Math.floor( Math.random() * (9-1))+1;
+						var iti=Math.floor( Math.random() * (9-1))+1;
+						var cpu=juu*10+iti;
+						scan();
+						}
+					var e = document.getElementById ('some');
+					e.value=e.value+"白"+cpu+"\n";
+					document.getElementById("button_"+cpu).src=img[2].src;
+					change(cpu);
+					cnt=1;
+					recnt=2;
+					siro++;
+					document.getElementById('textbox').value=bturn;
+					ishi++;
+					document.getElementById('sirokazu').value=siro;
+					document.getElementById('kurokazu').value=kuro;
+					scan();
+					setTimeout('pass()',500);
+					syouhai();
+					}
+				}			
+/*****************************************************
+******************************************************
+			挟まれた石を裏返す
+******************************************************
+*****************************************************/
+			function change(n){
+				//(一個)
+				for(s=0;s<8;s++){
+						if(d.getElementById(st+n).src==img[cnt].src && d.getElementById(st+(n+kzs[s]*1)).src==img[recnt].src && d.getElementById(st+(n+kzs[s]*2)).src==img[cnt].src){
+							for(i=1;i<2;i++){
+								d.getElementById(st+(n+kzs[s]*i)).src=img[cnt].src;
+								if(cnt==1){kuro++;siro--;}
+								if(cnt==2){siro++;kuro--;}
+							}  
+						}	
+				//(二個)	
+						if(d.getElementById(st+n).src==img[cnt].src && d.getElementById(st+(n+kzs[s]*1)).src==img[recnt].src && d.getElementById(st+(n+kzs[s]*2)).src==img[recnt].src && d.getElementById(st+(n+kzs[s]*3)).src==img[cnt].src){
+							for(i=1;i<3;i++){
+								d.getElementById(st+(n+kzs[s]*i)).src=img[cnt].src;
+								if(cnt==1){kuro++;siro--;}
+								if(cnt==2){siro++;kuro--;}
+							}  
+						}
+				//(三個)
+						if(d.getElementById(st+n).src==img[cnt].src && d.getElementById(st+(n-kzs[s]*1)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*2)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*3)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*4)).src==img[cnt].src ){
+							for(i=1;i<4;i++){
+								d.getElementById(st+(n-kzs[s]*i)).src=img[cnt].src;
+								if(cnt==1){kuro++;siro--;}
+								if(cnt==2){siro++;kuro--;}
+							}  
+						}
+				//(四個)
+						if(d.getElementById(st+n).src==img[cnt].src && d.getElementById(st+(n-kzs[s]*1)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*2)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*3)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*4)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*5)).src==img[cnt].src){
+							for(i=1;i<5;i++){
+								d.getElementById(st+(n-kzs[s]*i)).src=img[cnt].src;
+								if(cnt==1){kuro++;siro--;}
+								if(cnt==2){siro++;kuro--;}
+							} 
+						}
+				//(五個)
+						if(d.getElementById(st+n).src==img[cnt].src && d.getElementById(st+(n-kzs[s]*1)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*2)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*3)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*4)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*5)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*6)).src==img[cnt].src){
+							for(i=1;i<6;i++){
+								d.getElementById(st+(n-kzs[s]*i)).src=img[cnt].src;
+								if(cnt==1){kuro++;siro--;}
+								if(cnt==2){siro++;kuro--;}	
+							}  
+						}
+				//(六個)
+						if(d.getElementById(st+n).src==img[cnt].src && d.getElementById(st+(n-kzs[s]*1)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*2)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*3)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*4)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*5)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*6)).src==img[recnt].src && d.getElementById(st+(n-kzs[s]*7)).src==img[cnt].src){
+							for(i=1;i<7;i++){
+								d.getElementById(st+(n-kzs[s]*i)).src=img[cnt].src;
+								if(cnt==1){kuro++;siro--;}
+								if(cnt==2){siro++;kuro--;}
+								}  
+						}
+					}
+			}
+/*****************************************************
+******************************************************
+			黒・白それぞれおけるかどうか一つ一つスキャン
+******************************************************
+*****************************************************/			
+			function scan(){
+				for(j=1;j<9;j++){
+					for(k=1;k<9;k++){
+					var i=j*10+k;
+					bb[i]=0;
+					wb[i]=0;
+					}
+				}
+		//白の石が置けるかどうかスキャン
+				for(j=1;j<9;j++){
+					for(k=1;k<9;k++){
+					var i=j*10+k;
+						if(d.getElementById(st+i).src==img[0].src && ((d.getElementById(st+(i-1)).src==img[2].src && d.getElementById(st+(i-2)).src==img[1].src)||(d.getElementById(st+(i+1)).src==img[2].src && d.getElementById(st+(i+2)).src==img[1].src)||(d.getElementById(st+(i+1)).src==img[2].src && d.getElementById(st+(i+2)).src==img[2].src && d.getElementById(st+(i+3)).src==img[1].src)||(d.getElementById(st+(i-1)).src==img[2].src && d.getElementById(st+(i-2)).src==img[2].src && d.getElementById(st+(i-3)).src==img[1].src)||(d.getElementById(st+(i-1)).src==img[2].src && d.getElementById(st+(i-2)).src==img[2].src && d.getElementById(st+(i-3)).src==img[2].src && d.getElementById(st+(i-4)).src==img[1].src )||(d.getElementById(st+(i+1)).src==img[2].src && d.getElementById(st+(i+2)).src==img[2].src && d.getElementById(st+(i+3)).src==img[2].src && d.getElementById(st+(i+4)).src==img[1].src)||(d.getElementById(st+(i-1)).src==img[2].src && d.getElementById(st+(i-2)).src==img[2].src && d.getElementById(st+(i-3)).src==img[2].src && d.getElementById(st+(i-4)).src==img[2].src && d.getElementById(st+(i-5)).src==img[1].src)||(d.getElementById(st+(i+1)).src==img[2].src && d.getElementById(st+(i+2)).src==img[2].src && d.getElementById(st+(i+3)).src==img[2].src && d.getElementById(st+(i+4)).src==img[2].src && d.getElementById(st+(i+5)).src==img[1].src)||(d.getElementById(st+(i-1)).src==img[2].src && d.getElementById(st+(i-2)).src==img[2].src && d.getElementById(st+(i-3)).src==img[2].src && d.getElementById(st+(i-4)).src==img[2].src && d.getElementById(st+(i-5)).src==img[2].src && d.getElementById(st+(i-6)).src==img[1].src)||(d.getElementById(st+(i+1)).src==img[2].src && d.getElementById(st+(i+2)).src==img[2].src && d.getElementById(st+(i+3)).src==img[2].src && d.getElementById(st+(i+4)).src==img[2].src && d.getElementById(st+(i+5)).src==img[2].src && d.getElementById(st+(i+6)).src==img[1].src)||(d.getElementById(st+(i-1)).src==img[2].src && d.getElementById(st+(i-2)).src==img[2].src && d.getElementById(st+(i-3)).src==img[2].src && d.getElementById(st+(i-4)).src==img[2].src && d.getElementById(st+(i-5)).src==img[2].src && d.getElementById(st+(i-6)).src==img[2].src && d.getElementById(st+(i-7)).src==img[1].src)||(d.getElementById(st+(i+1)).src==img[2].src && d.getElementById(st+(i+2)).src==img[2].src && d.getElementById(st+(i+3)).src==img[2].src && d.getElementById(st+(i+4)).src==img[2].src && d.getElementById(st+(i+5)).src==img[2].src && d.getElementById(st+(i+6)).src==img[1].src)||(d.getElementById(st+(i-1)).src==img[2].src && d.getElementById(st+(i-2)).src==img[2].src && d.getElementById(st+(i-3)).src==img[2].src && d.getElementById(st+(i-4)).src==img[2].src && d.getElementById(st+(i-5)).src==img[2].src && d.getElementById(st+(i-6)).src==img[2].src && d.getElementById(st+(i-7)).src==img[1].src)||(d.getElementById(st+(i+1)).src==img[2].src && d.getElementById(st+(i+2)).src==img[2].src && d.getElementById(st+(i+3)).src==img[2].src && d.getElementById(st+(i+4)).src==img[2].src && d.getElementById(st+(i+5)).src==img[2].src && d.getElementById(st+(i+6)).src==img[2].src && d.getElementById(st+(i+7)).src==img[1].src)
+								   ||(d.getElementById(st+(i-10)).src==img[2].src && d.getElementById(st+(i-20)).src==img[1].src)||(d.getElementById(st+(i+10)).src==img[2].src && d.getElementById(st+(i+20)).src==img[1].src)||(d.getElementById(st+(i+10)).src==img[2].src && d.getElementById(st+(i+20)).src==img[2].src && d.getElementById(st+(i+30)).src==img[1].src)||(d.getElementById(st+(i-10)).src==img[2].src && d.getElementById(st+(i-20)).src==img[2].src && d.getElementById(st+(i-30)).src==img[1].src)||(d.getElementById(st+(i-10)).src==img[2].src && d.getElementById(st+(i-20)).src==img[2].src && d.getElementById(st+(i-30)).src==img[2].src && d.getElementById(st+(i-40)).src==img[1].src )||(d.getElementById(st+(i+10)).src==img[2].src && d.getElementById(st+(i+20)).src==img[2].src && d.getElementById(st+(i+30)).src==img[2].src && d.getElementById(st+(i+40)).src==img[1].src )||(d.getElementById(st+(i-10)).src==img[2].src && d.getElementById(st+(i-20)).src==img[2].src && d.getElementById(st+(i-30)).src==img[2].src && d.getElementById(st+(i-40)).src==img[2].src && d.getElementById(st+(i-50)).src==img[1].src)||(d.getElementById(st+(i+10)).src==img[2].src && d.getElementById(st+(i+20)).src==img[2].src && d.getElementById(st+(i+30)).src==img[2].src && d.getElementById(st+(i+40)).src==img[2].src && d.getElementById(st+(i+50)).src==img[1].src)||(d.getElementById(st+(i-10)).src==img[2].src && d.getElementById(st+(i-20)).src==img[2].src && d.getElementById(st+(i-30)).src==img[2].src && d.getElementById(st+(i-40)).src==img[2].src && d.getElementById(st+(i-50)).src==img[2].src && d.getElementById(st+(i-60)).src==img[1].src)||(d.getElementById(st+(i+10)).src==img[2].src && d.getElementById(st+(i+20)).src==img[2].src && d.getElementById(st+(i+30)).src==img[2].src && d.getElementById(st+(i+40)).src==img[2].src && d.getElementById(st+(i+50)).src==img[2].src && d.getElementById(st+(i+60)).src==img[1].src)||(d.getElementById(st+(i-10)).src==img[2].src && d.getElementById(st+(i-20)).src==img[2].src && d.getElementById(st+(i-30)).src==img[2].src && d.getElementById(st+(i-40)).src==img[2].src && d.getElementById(st+(i-50)).src==img[2].src && d.getElementById(st+(i-60)).src==img[2].src && d.getElementById(st+(i-70)).src==img[1].src)||(d.getElementById(st+(i+10)).src==img[2].src && d.getElementById(st+(i+20)).src==img[2].src && d.getElementById(st+(i+30)).src==img[2].src && d.getElementById(st+(i+40)).src==img[2].src && d.getElementById(st+(i+50)).src==img[2].src && d.getElementById(st+(i+60)).src==img[2].src && d.getElementById(st+(i+70)).src==img[1].src)
+								   ||(d.getElementById(st+(i+11)).src==img[2].src && d.getElementById(st+(i+22)).src==img[1].src)||(d.getElementById(st+(i-11)).src==img[2].src && d.getElementById(st+(i-22)).src==img[1].src)||(d.getElementById(st+(i+9)).src==img[2].src && d.getElementById(st+(i+18)).src==img[1].src)||(d.getElementById(st+(i-9)).src==img[2].src && d.getElementById(st+(i-18)).src==img[1].src)||(d.getElementById(st+(i+11)).src==img[2].src && d.getElementById(st+(i+22)).src==img[2].src && d.getElementById(st+(i+33)).src==img[1].src)||(d.getElementById(st+(i-11)).src==img[2].src && d.getElementById(st+(i-22)).src==img[2].src && d.getElementById(st+(i-33)).src==img[1].src)||(d.getElementById(st+(i+9)).src==img[2].src && d.getElementById(st+(i+18)).src==img[2].src && d.getElementById(st+(i+27)).src==img[1].src)||(d.getElementById(st+(i-9)).src==img[2].src && d.getElementById(st+(i-18)).src==img[2].src && d.getElementById(st+(i-27)).src==img[1].src)||(d.getElementById(st+(i+11)).src==img[2].src && d.getElementById(st+(i+22)).src==img[2].src && d.getElementById(st+(i+33)).src==img[2].src && d.getElementById(st+(i+44)).src==img[1].src)||(d.getElementById(st+(i-11)).src==img[2].src && d.getElementById(st+(i-22)).src==img[2].src && d.getElementById(st+(i-33)).src==img[2].src && d.getElementById(st+(i-44)).src==img[1].src)||(d.getElementById(st+(i+9)).src==img[2].src && d.getElementById(st+(i+18)).src==img[2].src && d.getElementById(st+(i+27)).src==img[2].src && d.getElementById(st+(i+36)).src==img[1].src)||(d.getElementById(st+(i-9)).src==img[2].src && d.getElementById(st+(i-18)).src==img[2].src && d.getElementById(st+(i-27)).src==img[2].src && d.getElementById(st+(i-36)).src==img[1].src)||(d.getElementById(st+(i+11)).src==img[2].src && d.getElementById(st+(i+22)).src==img[2].src && d.getElementById(st+(i+33)).src==img[2].src && d.getElementById(st+(i+44)).src==img[2].src && d.getElementById(st+(i+55)).src==img[1].src)||(d.getElementById(st+(i-11)).src==img[2].src && d.getElementById(st+(i-22)).src==img[2].src && d.getElementById(st+(i-33)).src==img[2].src && d.getElementById(st+(i-44)).src==img[2].src && d.getElementById(st+(i-55)).src==img[1].src)||(d.getElementById(st+(i+9)).src==img[2].src && d.getElementById(st+(i+18)).src==img[2].src && d.getElementById(st+(i+27)).src==img[2].src && d.getElementById(st+(i+36)).src==img[2].src && d.getElementById(st+(i+45)).src==img[1].src)||(d.getElementById(st+(i-9)).src==img[2].src && d.getElementById(st+(i-18)).src==img[2].src && d.getElementById(st+(i-27)).src==img[2].src && d.getElementById(st+(i-36)).src==img[2].src && d.getElementById(st+(i-45)).src==img[1].src)||(d.getElementById(st+(i+11)).src==img[2].src && d.getElementById(st+(i+22)).src==img[2].src && d.getElementById(st+(i+33)).src==img[2].src && d.getElementById(st+(i+44)).src==img[2].src && d.getElementById(st+(i+55)).src==img[2].src && d.getElementById(st+(i+66)).src==img[1].src)||(d.getElementById(st+(i-11)).src==img[2].src && d.getElementById(st+(i-22)).src==img[2].src && d.getElementById(st+(i-33)).src==img[2].src && d.getElementById(st+(i-44)).src==img[2].src && d.getElementById(st+(i-55)).src==img[2].src && d.getElementById(st+(i-66)).src==img[1].src)||(d.getElementById(st+(i+9)).src==img[2].src && d.getElementById(st+(i+18)).src==img[2].src && d.getElementById(st+(i+27)).src==img[2].src && d.getElementById(st+(i+36)).src==img[2].src && d.getElementById(st+(i+45)).src==img[2].src && d.getElementById(st+(i+54)).src==img[1].src)||(d.getElementById(st+(i-9)).src==img[2].src && d.getElementById(st+(i-18)).src==img[2].src && d.getElementById(st+(i-27)).src==img[2].src && d.getElementById(st+(i-36)).src==img[2].src && d.getElementById(st+(i-45)).src==img[2].src && d.getElementById(st+(i-54)).src==img[1].src)||(d.getElementById(st+(i+11)).src==img[2].src && d.getElementById(st+(i+22)).src==img[2].src && d.getElementById(st+(i+33)).src==img[2].src && d.getElementById(st+(i+44)).src==img[2].src && d.getElementById(st+(i+55)).src==img[2].src && d.getElementById(st+(i+66)).src==img[2].src && d.getElementById(st+(i+77)).src==img[1].src)||(d.getElementById(st+(i-11)).src==img[2].src && d.getElementById(st+(i-22)).src==img[2].src && d.getElementById(st+(i-33)).src==img[2].src && d.getElementById(st+(i-44)).src==img[2].src && d.getElementById(st+(i-55)).src==img[2].src && d.getElementById(st+(i-66)).src==img[2].src && d.getElementById(st+(i-77)).src==img[1].src)||(d.getElementById(st+(i+9)).src==img[2].src && d.getElementById(st+(i+18)).src==img[2].src && d.getElementById(st+(i+27)).src==img[2].src && d.getElementById(st+(i+36)).src==img[2].src && d.getElementById(st+(i+45)).src==img[2].src && d.getElementById(st+(i+54)).src==img[2].src && d.getElementById(st+(i+63)).src==img[1].src)||(d.getElementById(st+(i-9)).src==img[2].src && d.getElementById(st+(i-18)).src==img[2].src && d.getElementById(st+(i-27)).src==img[2].src && d.getElementById(st+(i-36)).src==img[2].src && d.getElementById(st+(i-45)).src==img[2].src && d.getElementById(st+(i-54)).src==img[2].src && d.getElementById(st+(i-63)).src==img[1].src))){
+								   wb[i]=1;
+						}
+					}
+				}
+				
+		//黒スキャン
+				for(j=1;j<9;j++){
+					for(k=1;k<9;k++){
+					var i=j*10+k;
+						if(d.getElementById(st+i).src==img[0].src && ((d.getElementById(st+(i-1)).src==img[1].src && d.getElementById(st+(i-2)).src==img[2].src)||(d.getElementById(st+(i+1)).src==img[1].src && d.getElementById(st+(i+2)).src==img[2].src)||(d.getElementById(st+(i+1)).src==img[1].src && d.getElementById(st+(i+2)).src==img[1].src && d.getElementById(st+(i+3)).src==img[2].src)||(d.getElementById(st+(i-1)).src==img[1].src && d.getElementById(st+(i-2)).src==img[1].src && d.getElementById(st+(i-3)).src==img[2].src)||(d.getElementById(st+(i-1)).src==img[1].src && d.getElementById(st+(i-2)).src==img[1].src && d.getElementById(st+(i-3)).src==img[1].src && d.getElementById(st+(i-4)).src==img[2].src )||(d.getElementById(st+(i+1)).src==img[1].src && d.getElementById(st+(i+2)).src==img[1].src && d.getElementById(st+(i+3)).src==img[1].src && d.getElementById(st+(i+4)).src==img[2].src)||(d.getElementById(st+(i-1)).src==img[1].src && d.getElementById(st+(i-2)).src==img[1].src && d.getElementById(st+(i-3)).src==img[1].src && d.getElementById(st+(i-4)).src==img[1].src && d.getElementById(st+(i-5)).src==img[2].src)||(d.getElementById(st+(i+1)).src==img[1].src && d.getElementById(st+(i+2)).src==img[1].src && d.getElementById(st+(i+3)).src==img[1].src && d.getElementById(st+(i+4)).src==img[1].src && d.getElementById(st+(i+5)).src==img[2].src)||(d.getElementById(st+(i-1)).src==img[1].src && d.getElementById(st+(i-2)).src==img[1].src && d.getElementById(st+(i-3)).src==img[1].src && d.getElementById(st+(i-4)).src==img[1].src && d.getElementById(st+(i-5)).src==img[1].src && d.getElementById(st+(i-6)).src==img[2].src)||(d.getElementById(st+(i+1)).src==img[1].src && d.getElementById(st+(i+2)).src==img[1].src && d.getElementById(st+(i+3)).src==img[1].src && d.getElementById(st+(i+4)).src==img[1].src && d.getElementById(st+(i+5)).src==img[1].src && d.getElementById(st+(i+6)).src==img[2].src)||(d.getElementById(st+(i-1)).src==img[1].src && d.getElementById(st+(i-2)).src==img[1].src && d.getElementById(st+(i-3)).src==img[1].src && d.getElementById(st+(i-4)).src==img[1].src && d.getElementById(st+(i-5)).src==img[1].src && d.getElementById(st+(i-6)).src==img[1].src && d.getElementById(st+(i-7)).src==img[2].src)||(d.getElementById(st+(i+1)).src==img[1].src && d.getElementById(st+(i+2)).src==img[1].src && d.getElementById(st+(i+3)).src==img[1].src && d.getElementById(st+(i+4)).src==img[1].src && d.getElementById(st+(i+5)).src==img[1].src && d.getElementById(st+(i+6)).src==img[2].src)||(d.getElementById(st+(i-1)).src==img[1].src && d.getElementById(st+(i-2)).src==img[1].src && d.getElementById(st+(i-3)).src==img[1].src && d.getElementById(st+(i-4)).src==img[1].src && d.getElementById(st+(i-5)).src==img[1].src && d.getElementById(st+(i-6)).src==img[1].src && d.getElementById(st+(i-7)).src==img[2].src)||(d.getElementById(st+(i+1)).src==img[1].src && d.getElementById(st+(i+2)).src==img[1].src && d.getElementById(st+(i+3)).src==img[1].src && d.getElementById(st+(i+4)).src==img[1].src && d.getElementById(st+(i+5)).src==img[1].src && d.getElementById(st+(i+6)).src==img[1].src && d.getElementById(st+(i+7)).src==img[2].src)
+								   ||(d.getElementById(st+(i-10)).src==img[1].src && d.getElementById(st+(i-20)).src==img[2].src)||(d.getElementById(st+(i+10)).src==img[1].src && d.getElementById(st+(i+20)).src==img[2].src)||(d.getElementById(st+(i+10)).src==img[1].src && d.getElementById(st+(i+20)).src==img[1].src && d.getElementById(st+(i+30)).src==img[2].src)||(d.getElementById(st+(i-10)).src==img[1].src && d.getElementById(st+(i-20)).src==img[1].src && d.getElementById(st+(i-30)).src==img[2].src)||(d.getElementById(st+(i-10)).src==img[1].src && d.getElementById(st+(i-20)).src==img[1].src && d.getElementById(st+(i-30)).src==img[1].src && d.getElementById(st+(i-40)).src==img[2].src )||(d.getElementById(st+(i+10)).src==img[1].src && d.getElementById(st+(i+20)).src==img[1].src && d.getElementById(st+(i+30)).src==img[1].src && d.getElementById(st+(i+40)).src==img[2].src )||(d.getElementById(st+(i-10)).src==img[1].src && d.getElementById(st+(i-20)).src==img[1].src && d.getElementById(st+(i-30)).src==img[1].src && d.getElementById(st+(i-40)).src==img[1].src && d.getElementById(st+(i-50)).src==img[2].src)||(d.getElementById(st+(i+10)).src==img[1].src && d.getElementById(st+(i+20)).src==img[1].src && d.getElementById(st+(i+30)).src==img[1].src && d.getElementById(st+(i+40)).src==img[1].src && d.getElementById(st+(i+50)).src==img[2].src)||(d.getElementById(st+(i-10)).src==img[1].src && d.getElementById(st+(i-20)).src==img[1].src && d.getElementById(st+(i-30)).src==img[1].src && d.getElementById(st+(i-40)).src==img[1].src && d.getElementById(st+(i-50)).src==img[1].src && d.getElementById(st+(i-60)).src==img[2].src)||(d.getElementById(st+(i+10)).src==img[1].src && d.getElementById(st+(i+20)).src==img[1].src && d.getElementById(st+(i+30)).src==img[1].src && d.getElementById(st+(i+40)).src==img[1].src && d.getElementById(st+(i+50)).src==img[1].src && d.getElementById(st+(i+60)).src==img[2].src)||(d.getElementById(st+(i-10)).src==img[1].src && d.getElementById(st+(i-20)).src==img[1].src && d.getElementById(st+(i-30)).src==img[1].src && d.getElementById(st+(i-40)).src==img[1].src && d.getElementById(st+(i-50)).src==img[1].src && d.getElementById(st+(i-60)).src==img[1].src && d.getElementById(st+(i-70)).src==img[2].src)||(d.getElementById(st+(i+10)).src==img[1].src && d.getElementById(st+(i+20)).src==img[1].src && d.getElementById(st+(i+30)).src==img[1].src && d.getElementById(st+(i+40)).src==img[1].src && d.getElementById(st+(i+50)).src==img[1].src && d.getElementById(st+(i+60)).src==img[1].src && d.getElementById(st+(i+70)).src==img[2].src)
+								   ||(d.getElementById(st+(i+11)).src==img[1].src && d.getElementById(st+(i+22)).src==img[2].src)||(d.getElementById(st+(i-11)).src==img[1].src && d.getElementById(st+(i-22)).src==img[2].src)||(d.getElementById(st+(i+9)).src==img[1].src && d.getElementById(st+(i+18)).src==img[2].src)||(d.getElementById(st+(i-9)).src==img[1].src && d.getElementById(st+(i-18)).src==img[2].src)||(d.getElementById(st+(i+11)).src==img[1].src && d.getElementById(st+(i+22)).src==img[1].src && d.getElementById(st+(i+33)).src==img[2].src)||(d.getElementById(st+(i-11)).src==img[1].src && d.getElementById(st+(i-22)).src==img[1].src && d.getElementById(st+(i-33)).src==img[2].src)||(d.getElementById(st+(i+9)).src==img[1].src && d.getElementById(st+(i+18)).src==img[1].src && d.getElementById(st+(i+27)).src==img[2].src)||(d.getElementById(st+(i-9)).src==img[1].src && d.getElementById(st+(i-18)).src==img[1].src && d.getElementById(st+(i-27)).src==img[2].src)||(d.getElementById(st+(i+11)).src==img[1].src && d.getElementById(st+(i+22)).src==img[1].src && d.getElementById(st+(i+33)).src==img[1].src && d.getElementById(st+(i+44)).src==img[2].src)||(d.getElementById(st+(i-11)).src==img[1].src && d.getElementById(st+(i-22)).src==img[1].src && d.getElementById(st+(i-33)).src==img[1].src && d.getElementById(st+(i-44)).src==img[2].src)||(d.getElementById(st+(i+9)).src==img[1].src && d.getElementById(st+(i+18)).src==img[1].src && d.getElementById(st+(i+27)).src==img[1].src && d.getElementById(st+(i+36)).src==img[2].src)||(d.getElementById(st+(i-9)).src==img[1].src && d.getElementById(st+(i-18)).src==img[1].src && d.getElementById(st+(i-27)).src==img[1].src && d.getElementById(st+(i-36)).src==img[2].src)||(d.getElementById(st+(i+11)).src==img[1].src && d.getElementById(st+(i+22)).src==img[1].src && d.getElementById(st+(i+33)).src==img[1].src && d.getElementById(st+(i+44)).src==img[1].src && d.getElementById(st+(i+55)).src==img[2].src)||(d.getElementById(st+(i-11)).src==img[1].src && d.getElementById(st+(i-22)).src==img[1].src && d.getElementById(st+(i-33)).src==img[1].src && d.getElementById(st+(i-44)).src==img[1].src && d.getElementById(st+(i-55)).src==img[2].src)||(d.getElementById(st+(i+9)).src==img[1].src && d.getElementById(st+(i+18)).src==img[1].src && d.getElementById(st+(i+27)).src==img[1].src && d.getElementById(st+(i+36)).src==img[1].src && d.getElementById(st+(i+45)).src==img[2].src)||(d.getElementById(st+(i-9)).src==img[1].src && d.getElementById(st+(i-18)).src==img[1].src && d.getElementById(st+(i-27)).src==img[1].src && d.getElementById(st+(i-36)).src==img[1].src && d.getElementById(st+(i-45)).src==img[2].src)||(d.getElementById(st+(i+11)).src==img[1].src && d.getElementById(st+(i+22)).src==img[1].src && d.getElementById(st+(i+33)).src==img[1].src && d.getElementById(st+(i+44)).src==img[1].src && d.getElementById(st+(i+55)).src==img[1].src && d.getElementById(st+(i+66)).src==img[2].src)||(d.getElementById(st+(i-11)).src==img[1].src && d.getElementById(st+(i-22)).src==img[1].src && d.getElementById(st+(i-33)).src==img[1].src && d.getElementById(st+(i-44)).src==img[1].src && d.getElementById(st+(i-55)).src==img[1].src && d.getElementById(st+(i-66)).src==img[2].src)||(d.getElementById(st+(i+9)).src==img[1].src && d.getElementById(st+(i+18)).src==img[1].src && d.getElementById(st+(i+27)).src==img[1].src && d.getElementById(st+(i+36)).src==img[1].src && d.getElementById(st+(i+45)).src==img[1].src && d.getElementById(st+(i+54)).src==img[2].src)||(d.getElementById(st+(i-9)).src==img[1].src && d.getElementById(st+(i-18)).src==img[1].src && d.getElementById(st+(i-27)).src==img[1].src && d.getElementById(st+(i-36)).src==img[1].src && d.getElementById(st+(i-45)).src==img[1].src && d.getElementById(st+(i-54)).src==img[2].src)||(d.getElementById(st+(i+11)).src==img[1].src && d.getElementById(st+(i+22)).src==img[1].src && d.getElementById(st+(i+33)).src==img[1].src && d.getElementById(st+(i+44)).src==img[1].src && d.getElementById(st+(i+55)).src==img[1].src && d.getElementById(st+(i+66)).src==img[1].src && d.getElementById(st+(i+77)).src==img[2].src)||(d.getElementById(st+(i-11)).src==img[1].src && d.getElementById(st+(i-22)).src==img[1].src && d.getElementById(st+(i-33)).src==img[1].src && d.getElementById(st+(i-44)).src==img[1].src && d.getElementById(st+(i-55)).src==img[1].src && d.getElementById(st+(i-66)).src==img[1].src && d.getElementById(st+(i-77)).src==img[2].src)||(d.getElementById(st+(i+9)).src==img[1].src && d.getElementById(st+(i+18)).src==img[1].src && d.getElementById(st+(i+27)).src==img[1].src && d.getElementById(st+(i+36)).src==img[1].src && d.getElementById(st+(i+45)).src==img[1].src && d.getElementById(st+(i+54)).src==img[1].src && d.getElementById(st+(i+63)).src==img[2].src)||(d.getElementById(st+(i-9)).src==img[1].src && d.getElementById(st+(i-18)).src==img[1].src && d.getElementById(st+(i-27)).src==img[1].src && d.getElementById(st+(i-36)).src==img[1].src && d.getElementById(st+(i-45)).src==img[1].src && d.getElementById(st+(i-54)).src==img[1].src && d.getElementById(st+(i-63)).src==img[2].src))){
+								   bb[i]=1;
+						}
+					}
+				}
+					
+			}
+/*****************************************************
+******************************************************
+			自動でパスの判定
+******************************************************
+*****************************************************/			
+			function pass(){
+				if(ishi!=64 && (bb[11] + bb[12] + bb[13] + bb[14] + bb[15] + bb[16] + bb[17] + bb[18] + bb[21] + bb[22] + bb[23] + bb[24] + bb[25] + bb[26] + bb[27] + bb[28] + bb[31] + bb[32] + bb[33] + bb[34] + bb[35] + bb[36] + bb[37] + bb[38] + bb[41] + bb[42] + bb[43] + bb[44] + bb[45] + bb[46] + bb[47] + bb[48] + bb[51] + bb[52] + bb[53] + bb[54] + bb[55] + bb[56] + bb[57] + bb[58] + bb[61] + bb[62] + bb[63] + bb[64] + bb[65] + bb[66] + bb[67] + bb[68] + bb[71] + bb[72] + bb[73] + bb[74] + bb[75] + bb[76] + bb[77] + bb[78] + bb[81] + bb[82] + bb[83] + bb[84] + bb[85] + bb[86] + bb[87] + bb[88] + wb[11] + wb[12] + wb[13] + wb[14] + wb[15] + wb[16] + wb[17] + wb[18] + wb[21] + wb[22] + wb[23] + wb[24] + wb[25] + wb[26] + wb[27] + wb[28] + wb[31] + wb[32] + wb[33] + wb[34] + wb[35] + wb[36] + wb[37] + wb[38] + wb[41] + wb[42] + wb[43] + wb[44] + wb[45] + wb[46] + wb[47] + wb[48] + wb[51] + wb[52] + wb[53] + wb[54] + wb[55] + wb[56] + wb[57] + wb[58] + wb[61] + wb[62] + wb[63] + wb[64] + wb[65] + wb[66] + wb[67] + wb[68] + wb[71] + wb[72] + wb[73] + wb[74] + wb[75] + wb[76] + wb[77] + wb[78] + wb[81] + wb[82] + wb[83] + wb[84] + wb[85] + wb[86] + wb[87] + wb[88]) <=0){
+						alert("両者置けない");cnt=3;
+					if(cnt == 3 && kuro<siro){
+						alert(wwin);
+					}
+					if(cnt == 3 && kuro>siro){
+						alert(bwin);
+					}
+				}
+				if( cnt==1 && ishi!=64 && (wb[11] + wb[12] + wb[13] + wb[14] + wb[15] + wb[16] + wb[17] + wb[18] + wb[21] + wb[22] + wb[23] + wb[24] + wb[25] + wb[26] + wb[27] + wb[28] + wb[31] + wb[32] + wb[33] + wb[34] + wb[35] + wb[36] + wb[37] + wb[38] + wb[41] + wb[42] + wb[43] + wb[44] + wb[45] + wb[46] + wb[47] + wb[48] + wb[51] + wb[52] + wb[53] + wb[54] + wb[55] + wb[56] + wb[57] + wb[58] + wb[61] + wb[62] + wb[63] + wb[64] + wb[65] + wb[66] + wb[67] + wb[68] + wb[71] + wb[72] + wb[73] + wb[74] + wb[75] + wb[76] + wb[77] + wb[78] + wb[81] + wb[82] + wb[83] + wb[84] + wb[85] + wb[86] + wb[87] + wb[88]) <=0){
+					alert("黒のパス");
+					cnt=2;
+					recnt=1;
+					d.getElementById('textbox').value=wturn;
+					vcpu();
+				}
+				if( cnt==2 && ishi!=64 && (bb[11] + bb[12] + bb[13] + bb[14] + bb[15] + bb[16] + bb[17] + bb[18] + bb[21] + bb[22] + bb[23] + bb[24] + bb[25] + bb[26] + bb[27] + bb[28] + bb[31] + bb[32] + bb[33] + bb[34] + bb[35] + bb[36] + bb[37] + bb[38] + bb[41] + bb[42] + bb[43] + bb[44] + bb[45] + bb[46] + bb[47] + bb[48] + bb[51] + bb[52] + bb[53] + bb[54] + bb[55] + bb[56] + bb[57] + bb[58] + bb[61] + bb[62] + bb[63] + bb[64] + bb[65] + bb[66] + bb[67] + bb[68] + bb[71] + bb[72] + bb[73] + bb[74] + bb[75] + bb[76] + bb[77] + bb[78] + bb[81] + bb[82] + bb[83] + bb[84] + bb[85] + bb[86] + bb[87] + bb[88] )<=0){
+					alert("白のパス");
+					cnt=1;
+					recnt=2;
+					d.getElementById('textbox').value=bturn;
+				}
+			}
+/*****************************************************
+******************************************************
+			勝利をコール
+******************************************************
+*****************************************************/
+			function syouhai(){
+				if(ishi==64 && kuro<siro && cnt!=3){alert(wwin);cnt=3;}
+				if(ishi==64 && kuro>siro && cnt!=3){alert(bwin);cnt=3;}
+				if(kuro==0){alert(wwin);}
+				if(siro==0){alert(bwin);}
+			}
+		</script>
+		<br><br><br>
+		黒の数<INPUT type="text" name="黒の数" value="2" id="kurokazu" readonly><br/>
+		白の数<INPUT type="text" name="白の数" value="2" id="sirokazu" readonly><br/><br>
+				<TEXTAREA id="some" rows="20" ></TEXTAREA>
+</CENTER>	
+
+</body>
+</HTML>
